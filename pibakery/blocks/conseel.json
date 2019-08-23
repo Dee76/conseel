@@ -1,0 +1,44 @@
+{
+	"name": "conseel",
+	"text": "Install Conseel\\nUntrusted connection: %1\\nWiFi AP Network Name: %2\\nWiFi AP Password: %3\\nPi-Hole Connection: %4\\nPi-Hole Web Password: %5\\nRequires Internet connection.",
+	"script": "conseel-setup.sh",
+	"network": true,
+	"continue": true,
+	"type": "software",
+	"category": "software",
+	"shortDescription": "Installs and configures Conseel - The Untrusted Network Proxy.",
+	"longDescription": "Conseel turns your Raspberry Pi into a protected wireless access point. Providing a barrier between you and untrusted networks. Includes Pi-Hole to block malicious sites, and uses Cloudflare's DNS-over-HTTPS for privacy. Select which network interface you will use to connect to the untrusted network. The Conseel setup will take care of the rest. Requires an Internet connection.",
+	"args": [
+		{
+			"type": "menu",
+			"options": [
+				"wlan1",
+				"wlan0",
+				"eth0"
+			]
+		},
+		{
+			"type": "text",
+			"default": "network-name",
+			"maxLength": 32
+		},
+		{
+			"type": "text",
+			"default": "network-password",
+			"maxLength": 0
+		},
+		{
+			"type": "menu",
+			"options": [
+				"wlan0",
+				"eth0",
+				"wlan1"
+			]
+		},
+		{
+			"type": "text",
+			"default": "pihole-web-password",
+			"maxLength": 0
+		}
+	]
+}
