@@ -3,7 +3,7 @@ Conseel turns your Raspberry Pi into a protected wireless access point. providin
 
 ## PiBakery
 
-Conseel is built using (PiBakery)[https://www.pibakery.org/]. The _pibakery_ folder contains the recipes and PiBakery blocks for building out Conseel and its various components.
+Conseel is built using [PiBakery](https://www.pibakery.org/). The _pibakery_ folder contains the recipes and PiBakery blocks for building out Conseel and its various components.
 
 **This is a work in progress and is not yet release-quality.**
 
