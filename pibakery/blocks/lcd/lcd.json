@@ -1,0 +1,46 @@
+{
+	"name": "lcd",
+	"text": "Enable LCD Display\\nLCD Type: %1\\n%2 touch calibration tool\\n%2 Matchbox-keyboard\\nRequires Internet connection and forces a reboot.",
+	"script": "lcd-setup.sh",
+	"network": true,
+	"continue": false,
+	"type": "software",
+	"category": "software",
+	"shortDescription": "Enables support for a connected LCD display.",
+	"longDescription": "Enables support for a connected LCD display. Select the model of the connected LCD display, whether to enable the touch calibration tool, and whether to enable the Matchbox-keyboard. Requires an Internet connection. Forces a reboot for the changes to take effect.",
+	"args": [
+		{
+			"type": "menu",
+			"options": [
+				"LCD24 - 2.4\" RPi Display(MPI2401)",
+				"LCD24-3A+ - 2.4\" RPi Display For RPi 3A+ (MPI2411)",
+				"LCD28 - 2.8\" RPi Display (MPI2801)",
+				"LCD32 - 3.2\" RPi Display (MPI3201)",
+				"LCD35 - 3.5\" RPi Display (MPI3501)",
+				"LCD5 - 5.0\" HDMI Display (Resistance touch) (MPI5008)",
+				"LCD7B - 7.0\" HDMI Display-B-800X480 (MPI7001)",
+				"LCD7C - 7\" HDMI Display-C-1024X600 (MPI7002)",
+				"MHS32 - MHS-3.2\" RPi Display (MHS3232)",
+				"MHS35 - MHS-3.5\" RPi Display (MHS3528)",
+				"MHS40 - MHS-4.0\" HDMI Display-B(MHS4001)",
+				"MPI3508 - 3.5\" HDMI Display-B (MPI3508)",
+				"MPI4008 - 4.0\" HDMI Display (MPI4008)",
+				"MPI5001 - 5.0\" HDMI Display-B (Capacitor touch) (MPI5001)"
+			]
+		},
+		{
+			"type": "menu",
+			"options": [
+				"Enable",
+				"Disable"
+			]
+		},
+		{
+			"type": "menu",
+			"options": [
+				"Enable",
+				"Disable"
+			]
+		}
+	]
+}
